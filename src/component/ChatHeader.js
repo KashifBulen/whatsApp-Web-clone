@@ -18,7 +18,7 @@ export default function ChatHeader() {
     
     return (
         <AppBar elevation={0} position="static" color="default" sx={{ backgroundColor: '#ededed', borderLeft: '5px solid gainsboro', borderLeftWidth: 'thin' }} >
-            <Toolbar style={{ minWidth: '100px' }}>
+            <Toolbar >
                 <IconButton>
                     <Avatar alt="Person" src="/user.jpg" />
                 </IconButton>

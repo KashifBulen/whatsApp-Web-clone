@@ -5,14 +5,14 @@ export const DrawerContext = createContext();
 
 
 export const DrawerProvider = ({ children }) => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
+  const [isProfileOpen, setProfileOpen] = useState(false);
+// isProfileOpen, setProfileOpen
   const toggleDrawer = () => {
-    setIsDrawerOpen((prev) => !prev);
+    isProfileOpen((prev) => !prev);
   };
 
   const value = {
-    isDrawerOpen,
+    isProfileOpen,
     toggleDrawer,
   };
 

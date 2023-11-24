@@ -1,12 +1,12 @@
 import React from "react";
 import Background from "./Background";
 import Foreground from "./Forground";
-// import GlobalStyles from './GlobalStyles';
-// import SideBar from './SideBar';
 import CssBaseline from "@mui/material/CssBaseline";
-// import Chat from './Chat';
-import Main from "./Main";
+
+import SideBar from "./SideBar";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 const theme = createTheme({
   components: {
     MuiToolbar: {
@@ -33,7 +33,7 @@ export default function Start() {
 
       <Background>
         <Foreground>
-          <Main/>
+          <SideBar />
         </Foreground>
       </Background>
     </ThemeProvider>

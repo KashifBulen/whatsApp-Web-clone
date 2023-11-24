@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { Box, InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { experimentalStyled, alpha} from '@mui/material/styles'
+import { experimentalStyled} from '@mui/material/styles'
 
 import FilterListIcon from '@mui/icons-material/FilterList';
-import {createTheme} from '@mui/material/styles';
 
 const Search = experimentalStyled('div')(({ theme }) => ({
     position: 'relative',
-    borderRadius: 12,
+    borderRadius: 6,
+    height:30,
     backgroundColor: '#EDEDED',
      '&:hover': {
         backgroundColor: "#EDEDED",
@@ -30,7 +30,7 @@ const Search = experimentalStyled('div')(({ theme }) => ({
 
 const SearchIconWrapper = experimentalStyled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2),
-    
+    color:'#6A6B6C',
     height: '100%',
     position: 'absolute',
     pointerEvents: 'none',
@@ -41,10 +41,10 @@ const SearchIconWrapper = experimentalStyled('div')(({ theme }) => ({
 
 const StyledInputBase = experimentalStyled(InputBase)(({ theme }) => ({
     color: 'black',
-    
+
     fontSize:'0.8rem',
     '& .MuiInputBase-input': {
-        padding: theme.spacing(1, 1, 1, 0),
+        padding: theme.spacing(0.9, 0, 1, 0),
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)})`,
         transition: theme.transitions.create('width'),
@@ -81,7 +81,7 @@ export default function SideBarSearch() {
            <Box>
         <Search >
                 <SearchIconWrapper>
-                    {isFocus ? <ArrowBackIcon sx={{fontSize:"1.2rem"}} /> : <SearchIcon sx={{fontSize:"1.2rem"}} />}
+                    {isFocus ? <ArrowBackIcon sx={{fontSize:"1.2rem"}} /> : <SearchIcon sx={{fontSize:"1.1rem"}} />}
                 </SearchIconWrapper>
                 <StyledInputBase text={searchText} onChange={(e) => setSearchText(e.target.value)}
                     onFocus={onSearchFocus}

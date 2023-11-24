@@ -1,3 +1,5 @@
+'use client'
+
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -7,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 import Start from '@/component/Start';
 
-import { BackHand, Diversity2Outlined } from "@mui/icons-material";
 
 export default function Home() {
   return (

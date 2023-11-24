@@ -100,6 +100,30 @@ a {
   text-decoration: none;
 }
 
+
+
+/* scrollbar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CED0D1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CED0D1;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

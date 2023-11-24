@@ -7,12 +7,12 @@ import ChatInput from './ChatInput';
 
 
 
-export default function Chat(props) {
+export default function Chat() {
 
-    const { converation } = props;
+    
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%', backgroundColor: '#ededed', flexGrow: 1, }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%', backgroundColor: '#ededed', flexGrow: 1}}>
             <ChatHeader />
             <Divider />
             <ChatMain />
